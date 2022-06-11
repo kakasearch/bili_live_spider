@@ -20,7 +20,7 @@ for file in files:
 	for i in items[::-1]:
 		if i:
 			day = i.split(' ')[0]
-			num = i.replace("\n",'').split(",")[1]
+			num = i.replace("\n",'').split(",")[-1]
 			num = num.replace('人看过',"")
 			num = num.replace('万',"*10000")
 			num = eval(num)
